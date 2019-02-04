@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter renders correctly 1`] = `
+<section
+  className="sc-ifAKCX fjyNqJ"
+>
+  <h3
+    className="sc-EHOje hgnFSS"
+  >
+    Applied
+  </h3>
+  <div
+    className="sc-bdVaJa hRtkfL"
+  >
+    <img
+      className="sc-htpNat ioGRbM"
+      src="test"
+    />
+    <span
+      className="sc-bxivhb eNcWVP"
+    >
+      A B
+    </span>
+    <div
+      className="sc-bwzfXH SkWqn"
+    >
+      <span />
+      <button
+        onClick={[Function]}
+      >
+        ⇒
+      </button>
+    </div>
+  </div>
+</section>
+`;

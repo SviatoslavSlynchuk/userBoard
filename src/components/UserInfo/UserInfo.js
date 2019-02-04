@@ -70,6 +70,7 @@ UserInfo.propTypes = {
             last: PropTypes.string.isRequired,
         }),
         thumbnail: PropTypes.string.isRequired,
+        id: PropTypes.string.isRequired,
     }),
     onMoveToNextColumn: PropTypes.func.isRequired,
     onMoveToPrevColumn: PropTypes.func.isRequired,

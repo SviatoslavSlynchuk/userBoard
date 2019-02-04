@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter renders correctly 1`] = `
+<div>
+  <span
+    className="sc-htpNat jTDBgV"
+  >
+    Filter by:
+  </span>
+  <select
+    className="sc-bdVaJa kzpADP"
+    onChange={[Function]}
+  >
+    <option
+      value="name"
+    >
+      Name
+    </option>
+    <option
+      value="city"
+    >
+      City
+    </option>
+  </select>
+  <input
+    className="sc-bwzfXH kxyJUq"
+    onChange={[Function]}
+    type="text"
+  />
+</div>
+`;

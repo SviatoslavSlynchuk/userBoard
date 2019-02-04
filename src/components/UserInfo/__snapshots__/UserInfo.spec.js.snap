@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserInfo renders correctly 1`] = `
+<div
+  className="sc-bdVaJa hRtkfL"
+>
+  <img
+    className="sc-htpNat ioGRbM"
+    src="test"
+  />
+  <span
+    className="sc-bxivhb eNcWVP"
+  >
+    A B
+  </span>
+  <div
+    className="sc-bwzfXH SkWqn"
+  >
+    <span />
+    <button
+      onClick={[Function]}
+    >
+      ⇒
+    </button>
+  </div>
+</div>
+`;
