@@ -1,0 +1,19 @@
+{
+  "name": "userboard",
+  "version": "1.0.0",
+  "description": "This is a simple app to track onboarding process of candidates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SviatoslavSlynchuk/userBoard.git"
+  },
+  "author": "Sviatoslav Slynchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SviatoslavSlynchuk/userBoard/issues"
+  },
+  "homepage": "https://github.com/SviatoslavSlynchuk/userBoard#readme"
+}
