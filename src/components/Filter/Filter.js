@@ -20,7 +20,7 @@ const Filter = props => (
     <div>
         <StyledSpan>Filter by:</StyledSpan>
         <StyledSelect
-            value={props.operation}
+            value={props.filter.operation}
             onChange={props.onChangeFilterOperation}
         >
             <option value={constants.FILTER_TYPE_NAME}>
@@ -32,7 +32,7 @@ const Filter = props => (
         </StyledSelect>
         <StyledInput
             type='text'
-            value={props.value}
+            value={props.filter.value}
             onChange={props.onChangeFilterValue}
         />
     </div>

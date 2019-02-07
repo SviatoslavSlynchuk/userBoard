@@ -49,8 +49,8 @@ App.propTypes = {
 
 function mapStateToProps(state = {}) {
     const { personnel = [], filter, misc: { isFetching } } = state;
-
     const filteredPersonnelList = Helpers.filterPersonnelList(personnel, filter);
+    Helpers.setStateToStorage(state);
 
     return {
         personnel: {

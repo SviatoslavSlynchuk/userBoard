@@ -13,6 +13,8 @@ export default function personnelReducer(state = [], action) {
 
             return Object.assign({}, user, updatedStatus);
         });
+    case actionTypes.SET_STATE_FROM_LOCAL_STORAGE:
+        return action.data.personnel;
     default:
         return state;
     }

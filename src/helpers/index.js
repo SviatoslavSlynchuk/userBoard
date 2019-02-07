@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import * as constants from '../constants';
 
 export default class Helpers {
@@ -14,10 +15,12 @@ export default class Helpers {
         if (filter.value) {
             switch (filter.operation) {
             case constants.FILTER_TYPE_NAME:
-                return usersArray.filter(user => user.name.first.includes(filter.value)
+                return usersArray.filter(user => user.name.first.includes(
+                    filter.value.toLowerCase(),
+                )
                     || user.name.last.includes(filter.value));
             case constants.FILTER_TYPE_CITY:
-                return usersArray.filter(user => user.city.includes(filter.value));
+                return usersArray.filter(user => user.city.includes(filter.value.toLowerCase()));
             default:
                 return [...usersArray];
             }
@@ -46,5 +49,19 @@ export default class Helpers {
         default:
             return currStatus;
         }
+    }
+
+    static setStateToStorage(state) {
+        window.localStorage.setItem('userBoardState', JSON.stringify(state));
+    }
+
+    static getStateFromStorage() {
+        const localStateString = window.localStorage.getItem('userBoardState');
+
+        if (localStateString) {
+            return JSON.parse(localStateString);
+        }
+
+        return false;
     }
 }
