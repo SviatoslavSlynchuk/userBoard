@@ -9,6 +9,15 @@ npm run start
 ```
 It will run webpack-dev-server in watch mode.
 
-This app has no connection to the LocalStorage, so there is no ability to sync your state between few browser tabs.
+This app has no connection to the LocalStorage, so there is no ability to sync your state between few browser tabs - fixed(07.02.2019)
 
-Also, there is no unit or integrtion tests implemented.
+Also, there is no unit or integrtion tests implemented - fixed(04.02.2019).
+
+To run this app in Docker just run 
+```
+docker build . -t react-docker
+```
+and after completion run
+```
+docker run -p 8000:80 react-docker
+```
